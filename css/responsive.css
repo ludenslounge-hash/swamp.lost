@@ -1,0 +1,40 @@
+/* ── Responsive adjustments for viewports under 700px ── */
+@media (max-width: 700px) {
+  :root {
+    --space-md: 1.25rem;
+    --space-lg: 2.5rem;
+    --space-xl: 4rem;
+    
+    --glow-radius: 300px;
+    --vignette-spread: 25%;
+  }
+
+  #app {
+    padding: var(--space-sm);
+  }
+
+  .title {
+    margin-bottom: var(--space-xs);
+  }
+
+  .subtitle {
+    margin-bottom: var(--space-md);
+  }
+
+  .btn {
+    padding: 0.85rem 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .text-box {
+    padding: var(--space-sm);
+  }
+
+  .gate-input {
+    max-width: 100%;
+  }
+
+  .irrlicht-portrait {
+    height: 180px;
+  }
+}
