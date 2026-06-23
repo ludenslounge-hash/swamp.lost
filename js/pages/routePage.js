@@ -15,24 +15,37 @@ const SHADOW_MODIFIERS = {
   3: 'irrlicht-shadow--corpse-reefs'
 };
 
+const SHADOW_IMAGES = {
+  1: 'assets/images/irrlicht-shadow-1.png',
+  2: 'assets/images/irrlicht-shadow-2.png',
+  3: 'assets/images/irrlicht-shadow-3.png'
+};
+
 export function render() {
   const state = getState();
   const stationIndex = state.currentStation;
   const route = GAME_TEXTS.routes[stationIndex];
   const irrlicht = GAME_TEXTS.irrlichter[stationIndex];
+  const shadowImage = SHADOW_IMAGES[stationIndex] || irrlicht.image;
 
   renderPage((container) => {
     // Ghostly background shadow element
     const shadowModifier = SHADOW_MODIFIERS[stationIndex] || '';
     const shadowImg = createElement('img', {
       className: `irrlicht-shadow ${shadowModifier}`,
-      src: irrlicht.image,
+      src: shadowImage,
       alt: '' // Decorative, hidden from assistive tech
     });
 
     // Header Info
     const titleEl = createElement('h1', { className: 'title' }, route.title);
     const subtitleEl = createElement('p', { className: 'subtitle' }, route.mainText);
+    const markerImg = createElement('img', {
+      className: 'route-irrlicht',
+      src: shadowImage,
+      alt: `Irrlicht ${stationIndex}`
+    });
+    const markerFrame = createElement('div', { className: 'route-irrlicht-frame' }, markerImg);
 
     // Lore Body
     const bodyParagraphs = route.body.map(text => createElement('p', {}, text));
@@ -43,6 +56,6 @@ export function render() {
       navigateTo('#/gate');
     });
 
-    container.append(shadowImg, titleEl, subtitleEl, bodyContainer, nextBtn);
+    container.append(shadowImg, titleEl, subtitleEl, markerFrame, bodyContainer, nextBtn);
   });
 }

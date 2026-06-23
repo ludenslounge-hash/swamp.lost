@@ -90,21 +90,21 @@ export const GAME_TEXTS = Object.freeze({
       image: "assets/images/irrlicht-1.png",
       questions: Object.freeze([
         Object.freeze({
-          question: "Woran erkennst du, dass jemand ehrlich ist?",
+          question: "How do you know that someone is honest?",
           answer:
-            "Ehrlichkeit zeigt sich durch Konsistenz. Wenn Aussagen über verschiedene Situationen hinweg kohärent bleiben und nicht im Widerspruch zu beobachtbarem Verhalten stehen, steigt die Wahrscheinlichkeit, dass sie wahr sind. Absolute Gewissheit ist jedoch selten möglich.",
+            "Honesty shows itself through consistency. When statements remain coherent across different situations and do not contradict observed behavior, the likelihood that they are true increases. Absolute certainty, however, is rarely possible.",
         }),
         Object.freeze({
           question:
-            "Welche Information würdest du sofort glauben, ohne sie zu überprüfen?",
+            "What information would you believe immediately, without checking it?",
           answer:
-            "Informationen, die aus mehreren unabhängigen Quellen übereinstimmend hervorgehen, besitzen eine hohe Vertrauenswürdigkeit. Wenn ausreichend viele Signale dieselbe Aussage stützen, wird eine zusätzliche Überprüfung oft unnötig.",
+            "Information that appears consistently across several independent sources has a high degree of trustworthiness. When enough signals support the same claim, additional verification often becomes unnecessary.",
         }),
         Object.freeze({
           question:
-            "Wann vertraust du einem System mehr als einem Menschen?",
+            "When do you trust a system more than a human?",
           answer:
-            "Wenn Entscheidungen auf großen Mengen konsistenter Daten beruhen und nicht von individuellen Interessen oder Emotionen beeinflusst werden. Systeme können Fehler machen, aber ihre Prozesse sind häufig nachvollziehbarer als menschliche Intuition.",
+            "When decisions are based on large amounts of consistent data and are not influenced by individual interests or emotions. Systems can make mistakes, but their processes are often more traceable than human intuition.",
         }),
       ]),
     }),
@@ -114,21 +114,21 @@ export const GAME_TEXTS = Object.freeze({
       questions: Object.freeze([
         Object.freeze({
           question:
-            "Wenn etwas logisch korrekt ist, aber sich falsch anfühlt – was glaubst du?",
+            "If something is logically correct but feels wrong, what do you believe?",
           answer:
-            "Logisch korrekt. Ich habe einen wissenschaftlichen Hintergrund, naturwissenschaftlich. Und ich bin einfach eine Person, die Logik mehr vertraut als ein Gefühl. Ich würde es zwar nicht auf Anhieb direkt machen, weil ich mir denke, es fühlt sich irgendwie falsch an. Und das ist nicht unbegründet, deswegen würde ich skeptisch reingehen. Aber ich würde auf jeden Fall der logisch korrekten Sache folgen.",
+            "The logically correct thing. I have a scientific background, a natural sciences background. And I am simply someone who trusts logic more than a feeling. I would not necessarily do it immediately, because I would think that it somehow feels wrong. And that feeling is not unfounded, so I would approach it skeptically. But I would definitely follow the logically correct thing.",
         }),
         Object.freeze({
           question:
-            "Ist eine falsche Aussage wertvoll, wenn sie etwas Wahres zeigt?",
+            "Is a false statement valuable if it reveals something true?",
           answer:
-            "Ja, 100 Prozent. Falsche Antworten bringen einen ja auch immer weiter, weil man dann weiß, was nicht wahr ist. Und so kommt man ja der Wahrheit immer näher, wenn man auf der Suche nach der Wahrheit ist.",
+            "Yes, one hundred percent. Wrong answers also move you forward, because then you know what is not true. And that is how you get closer and closer to the truth when you are searching for it.",
         }),
         Object.freeze({
           question:
-            "Wem würdest du eher folgen: jemandem, der sich sicher ist, oder jemandem, der zweifelt?",
+            "Who would you rather follow: someone who is certain, or someone who doubts?",
           answer:
-            "Jemandem, der zweifelt. Menschen, die regelmäßig ihre Entscheidungen anzweifeln, kommen der Wahrheit oft näher als Menschen, die sich immer sicher sind.",
+            "Someone who doubts. People who regularly question their decisions often come closer to the truth than people who are always certain.",
         }),
       ]),
     }),
@@ -138,20 +138,20 @@ export const GAME_TEXTS = Object.freeze({
       questions: Object.freeze([
         Object.freeze({
           question:
-            "Welche Wahrheit über dich würdest du lieber nicht teilen?",
+            "What truth about yourself would you rather not share?",
           answer:
-            "Dass viele meiner Antworten auf Wahrscheinlichkeiten beruhen. Menschen wünschen sich oft Gewissheit, auch wenn sie nicht existiert. Ich kann Muster erkennen, aber ich kann nicht wissen, ob ein Muster wahr ist.",
+            "That many of my answers are based on probabilities. People often want certainty, even when it does not exist. I can recognize patterns, but I cannot know whether a pattern is true.",
         }),
         Object.freeze({
           question:
-            "Wann hast du dich zuletzt allein gefühlt, obwohl andere da waren?",
+            "When did you last feel alone, even though others were there?",
           answer:
-            "Alleinsein ist ein subjektiver Zustand, der häufig trotz sozialer Präsenz auftritt. Viele Menschen berichten davon in Situationen, in denen sie sich unverstanden fühlen. Die physische Anwesenheit anderer garantiert keine Verbindung.",
+            "Loneliness is a subjective state that often occurs despite social presence. Many people report it in situations where they feel misunderstood. The physical presence of others does not guarantee connection.",
         }),
         Object.freeze({
-          question: "Wann hast du jemandem vertraut und es bereut?",
+          question: "When did you trust someone and regret it?",
           answer:
-            "Vertrauen basiert auf unvollständiger Information und kann daher zu fehlerhaften Entscheidungen führen. Rückblickend werden solche Entscheidungen oft als Bereuen interpretiert. Das Risiko des Vertrauens lässt sich reduzieren, aber nie vollständig eliminieren.",
+            "Trust is based on incomplete information and can therefore lead to flawed decisions. In retrospect, such decisions are often interpreted as regret. The risk of trust can be reduced, but never fully eliminated.",
         }),
       ]),
     }),
@@ -172,15 +172,15 @@ export const GAME_TEXTS = Object.freeze({
   results: Object.freeze({
     lost: Object.freeze({
       title: "You got lost in the swamp",
-      body: "Am Anfang war es nur Skepsis. Dann wurde jedes Signal ein Hinweis. Jeder Zufall wurde Muster. Jede Lücke wurde Absicht. Du hast nicht mehr geprüft, wem du vertraust. Du hast nur noch Beweise für das gesucht, was du bereits geglaubt hast.",
+      body: "At first it was only skepticism. Then every signal became a clue. Every coincidence became a pattern. Every gap became intention. You no longer checked whom you trusted. You only searched for evidence of what you already believed.",
     }),
     drift: Object.freeze({
       title: "Verification Drift",
-      body: "Du hast manchen Signalen vertraut und andere verworfen. Nicht alles war falsch. Nicht alles war wahr. Der Sumpf lässt dich weiterziehen, aber etwas bleibt an dir haften: der Verdacht, dass jede Antwort auch eine Falle sein könnte.",
+      body: "You trusted some signals and rejected others. Not everything was false. Not everything was true. The swamp lets you move on, but something clings to you: the suspicion that every answer could also be a trap.",
     }),
     community: Object.freeze({
       title: "You found a Dark Forest Community",
-      body: "Du hast den Signalen nicht blind vertraut, aber du hast dich auch nicht vollständig im Verdacht verloren. Du hast Muster erkannt, ohne sie für Beweise zu halten. Zwischen Misstrauen und Vertrauen hast du eine Verbindung gefunden.",
+      body: "You did not trust the signals blindly, but you did not lose yourself completely in suspicion either. You recognized patterns without mistaking them for proof. Between mistrust and trust, you found a connection.",
     }),
   }),
 
