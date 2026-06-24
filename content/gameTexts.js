@@ -199,6 +199,6 @@ export const GAME_TEXTS = Object.freeze({
     skip: "Skip",
     continueButton: "Continue",
     restart: "Restart",
-    download: "Download",
+    download: "Save your path",
   }),
 });

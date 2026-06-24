@@ -10,6 +10,8 @@ import { GAME_TEXTS } from '../../content/gameTexts.js';
 import { renderPage, createElement, createButton } from '../renderer.js';
 import { navigateTo } from '../router.js';
 
+const PATH_SAVE_COUNTER_KEY = 'swampLostPathSaveNumber';
+
 export function render() {
   const state = getState();
   const resultType = getFinalResult(); // 'lost' | 'drift' | 'community'
@@ -29,7 +31,7 @@ export function render() {
     // Ending body text description
     const bodyEl = createElement('p', { className: 'result-body' }, resultText.body);
 
-    // Action buttons: Download Journal and Restart
+    // Action buttons: Save Path and Restart
     const handleDownload = () => {
       triggerLogDownload(state, resultType);
     };
@@ -53,6 +55,9 @@ export function render() {
  * @param {string} resultType 
  */
 function triggerLogDownload(state, resultType) {
+  const saveNumber = getNextPathSaveNumber();
+  const paddedSaveNumber = String(saveNumber).padStart(3, '0');
+
   let log = `SWAMP.LOST — VERIFICATION JOURNAL\n`;
   log += `================================\n\n`;
   log += `STATUS:      ${resultType.toUpperCase()}\n`;
@@ -81,9 +86,20 @@ function triggerLogDownload(state, resultType) {
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `swamp_lost_verification_log.txt`;
+  a.download = `swamp-lost-path-${paddedSaveNumber}.txt`;
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
   URL.revokeObjectURL(url);
+
+  setNextPathSaveNumber(saveNumber + 1);
+}
+
+function getNextPathSaveNumber() {
+  const storedValue = Number.parseInt(localStorage.getItem(PATH_SAVE_COUNTER_KEY), 10);
+  return Number.isFinite(storedValue) && storedValue > 0 ? storedValue : 1;
+}
+
+function setNextPathSaveNumber(nextSaveNumber) {
+  localStorage.setItem(PATH_SAVE_COUNTER_KEY, String(nextSaveNumber));
 }
