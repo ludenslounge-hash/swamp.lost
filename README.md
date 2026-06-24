@@ -72,4 +72,4 @@ swamp.lost/
 - **Session Persistence:** All choices are synchronized into the browser's `sessionStorage` so refreshing the browser preserves active game states. Clicking "Restart" at any point resets the session back to initial values.
 - **Atmospheric Filters:** Background vignette radial lighting and full-screen noise are generated on-the-fly via responsive CSS overlays and inline SVG `<feTurbulence>` filters.
 - **Journal Export:** Upon completing the final station, players can click **Download** on the results screen to save a complete, structured text file containing their answers, path selections, and score indicators (`swamp_lost_verification_log.txt`).
-# swamp.lost
+
