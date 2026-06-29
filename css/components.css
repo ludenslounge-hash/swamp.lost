@@ -3,11 +3,15 @@
   font-family: var(--font-serif);
   font-size: var(--font-size-title);
   font-weight: 700;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
   color: var(--color-text);
   margin-bottom: var(--space-sm);
   text-align: center;
-  text-shadow: 0 0 20px rgba(0, 229, 204, 0.15);
+  text-shadow:
+    1px 0 rgba(183, 255, 77, 0.24),
+    -1px 0 rgba(0, 229, 204, 0.18),
+    0 0 22px rgba(111, 143, 47, 0.22);
+  animation: titleStaticSlip 9s steps(1, end) infinite;
 }
 
 .subtitle {
@@ -33,13 +37,23 @@
 
 /* ── Text Boxes ── */
 .text-box {
-  background: rgba(17, 20, 17, 0.5);
+  background:
+    linear-gradient(180deg, rgba(17, 24, 13, 0.68), rgba(8, 11, 7, 0.54)),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 14px,
+      rgba(183, 255, 77, 0.018) 14px,
+      rgba(183, 255, 77, 0.018) 15px
+    );
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   padding: var(--space-md);
   margin-bottom: var(--space-md);
   border-radius: 0 4px 4px 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  box-shadow:
+    inset 0 1px 0 rgba(183, 255, 77, 0.04),
+    0 4px 24px rgba(0, 0, 0, 0.48);
 }
 
 .text-box--question {
@@ -67,8 +81,9 @@
   text-transform: uppercase;
   letter-spacing: 0.15em;
   color: var(--color-text);
-  background: rgba(10, 42, 26, 0.3);
-  border: 1px solid var(--color-border);
+  background:
+    linear-gradient(180deg, rgba(14, 40, 18, 0.44), rgba(4, 8, 5, 0.72));
+  border: 1px solid rgba(111, 143, 47, 0.28);
   border-radius: 2px;
   padding: 1rem 2rem;
   cursor: pointer;
@@ -83,10 +98,14 @@
 }
 
 .btn:hover {
-  color: var(--color-accent);
-  border-color: var(--color-accent);
-  background: rgba(0, 229, 204, 0.05);
-  box-shadow: 0 0 15px var(--color-accent-dim);
+  color: var(--color-swamp-gas);
+  border-color: rgba(183, 255, 77, 0.62);
+  background:
+    linear-gradient(180deg, rgba(38, 72, 22, 0.5), rgba(5, 13, 8, 0.78));
+  box-shadow:
+    0 0 15px rgba(183, 255, 77, 0.16),
+    0 0 30px rgba(0, 229, 204, 0.08);
+  filter: saturate(1.08);
 }
 
 .btn:active {
@@ -168,6 +187,32 @@
   content: ">";
   position: absolute;
   left: 0;
-  color: var(--color-accent);
+  color: var(--color-swamp-gas);
   font-weight: bold;
+  text-shadow: 0 0 8px rgba(183, 255, 77, 0.28);
+}
+
+@keyframes titleStaticSlip {
+  0%, 92%, 100% {
+    transform: translate3d(0, 0, 0);
+    filter: none;
+  }
+  93% {
+    transform: translate3d(-1px, 0, 0);
+    filter: hue-rotate(10deg);
+  }
+  94% {
+    transform: translate3d(1px, -1px, 0);
+    filter: contrast(1.16);
+  }
+  95% {
+    transform: translate3d(0, 0, 0);
+    filter: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .title {
+    animation: none;
+  }
 }
