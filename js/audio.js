@@ -4,7 +4,7 @@
  * Starts the ambient loop after the first user gesture so browsers allow playback.
  */
 
-const BACKGROUND_AUDIO_SRC = 'assets/images/05.wav';
+const BACKGROUND_AUDIO_SRC = 'assets/05.wav';
 const BACKGROUND_AUDIO_VOLUME = 0.45;
 
 let backgroundAudio;
