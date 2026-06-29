@@ -5,7 +5,9 @@
  */
 
 import { initRouter } from './router.js';
+import { initBackgroundAudio } from './audio.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+  initBackgroundAudio();
   initRouter();
 });
