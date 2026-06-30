@@ -9,6 +9,10 @@
   --color-accent-dim:     #00e5cc40;       /* Cyan at 25% opacity */
   --color-green-dark:     #0a2a1a;
   --color-green-glow:     #1aff8c20;       /* Dark green radial glow */
+  --color-swamp-murk:     #07120b;
+  --color-swamp-moss:     #6f8f2f;
+  --color-swamp-silt:     #2b3a17;
+  --color-swamp-gas:      #b7ff4d;
   --color-border:         #2a2a2a;
   --color-error:          #ff4444;
 
