@@ -64,8 +64,7 @@ export const GAME_TEXTS = Object.freeze({
       mainText: "You arrive at the Fog Banks.",
       body: Object.freeze([
         "A region saturated by synthetic engagement.",
-        "Nothing is fake enough to trigger alarms. Nothing is true enough to become ground.",
-        "The comments are warm. The reactions are immediate. The voices agree with you a little too smoothly.",
+        "Nothing is fake enough to trigger alarms.But everything feels slightly wrong.",
         "Everything feels human from a distance.",
         "Up close, every signal is too agreeable, too optimized, too emotionally calibrated.",
       ]),
@@ -75,12 +74,11 @@ export const GAME_TEXTS = Object.freeze({
       title: "Corpse Reef",
       mainText: "You arrive at the Corpse Reefs.",
       body: Object.freeze([
-        "Abandoned platforms rise from the water like dead cities.",
+        "Abandoned platforms almost like ghost cities.",
         "Profiles still post. Communities still welcome new members. Memorial pages recommend products to the people they mourn.",
         "Maintenance algorithms keep old rituals alive long after the humans have gone.",
         "This was once a center of authentication infrastructure.",
         "Then came the CAPTCHA Collapse. The gates learned to recognize machines. The machines learned to perform humanity.",
-        "Now the reef remembers everyone, but answers for no one.",
       ]),
     }),
   }),
@@ -178,15 +176,15 @@ export const GAME_TEXTS = Object.freeze({
   results: Object.freeze({
     lost: Object.freeze({
       title: "You got lost in the swamp",
-      body: "At first, you were careful. Then caution became a compass. Every signal bent toward suspicion. Every silence sounded arranged. Every gap in the story asked to be filled, and you filled it with intent. The swamp did not need to trap you. It only waited until you could no longer tell the difference between a warning and an invitation.",
+      body: "You entered the swamp like a pirate, looking for a route no one else could find. At first, suspicion kept you alive. Then it became the only law you followed.  The Irrlichter did not need to mislead you. You completed the trap yourself. Somewhere beyond the fog, a Dark Forest Community stayed hidden,  because you could no longer imagine that anything real would let itself be found.",
     }),
-    drift: Object.freeze({
-      title: "Verification Drift",
-      body: "You moved through the swamp without fully sinking. Some lights you followed. Some you refused. None of them became proof. The signals changed as you changed with them, and now every answer carries a second shadow. You are not lost, but you are no longer where you began. Something in you still checks the water after the reflection has passed.",
+    escape: Object.freeze({
+      title: "You made it out of the swamp",
+      body: "You crossed the swamp without fully belonging to it. Some lights you followed. Some you refused. Some may have been traps. Some may have been protecting something human. You learned that the Irrlichter Protocol never gives clean proof. It only watches how you move when proof is gone. The swamp lets you continue, but not unchanged. You leave with the feeling that every signal could still be harvesting something from you",
     }),
     community: Object.freeze({
       title: "You found a Dark Forest Community",
-      body: "The community was never marked on any map. It appeared only when you stopped treating every signal as prey or poison. You did not find certainty. You found others who had also learned to move without it. The gate opens quietly. No announcement, no proof, no final answer — only a place where trust is not given blindly, but kept alive together.",
+      body: "You did not find the community by proving who was real.  You found it by moving differently. You did not trust every light, but you did not treat every signal as prey. You followed without surrendering. You doubted without freezing.  At the edge of the swamp, the gate opens quietly. No announcement. No public link. Only a hidden network that stayed alive because not everyone was allowed to find it.",
     }),
   }),
 

@@ -15,8 +15,8 @@ export function render() {
   const decisionTexts = GAME_TEXTS.decisions;
 
   renderPage((container) => {
-    const titleEl = createElement('h1', { className: 'title' }, `The Crossroads`);
-    const instructionEl = createElement('p', { className: 'subtitle' }, `Choose your path at Station ${stationIndex}`);
+    const titleEl = createElement('h1', { className: 'title' }, `Choose your path`);
+    const instructionEl = createElement('p', { className: 'subtitle' }, `Do you trust the signal?`);
 
     // Decisions choices buttons
     const handleChoice = (choice) => {
