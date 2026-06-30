@@ -30,6 +30,7 @@ export function render() {
 
     // Ending body text description
     const bodyEl = createElement('p', { className: 'result-body' }, resultText.body);
+    const noteEl = createElement('p', { className: 'result-note' }, 'Destroy your handwritten notes after the game.');
 
     // Action buttons: Save Path and Restart
     const handleDownload = () => {
@@ -44,7 +45,7 @@ export function render() {
     const restartBtn = createButton(GAME_TEXTS.ui.restart, handleRestart);
     const btnGroup = createElement('div', { className: 'btn-group' }, [downloadBtn, restartBtn]);
 
-    container.append(titleEl, glowEl, bodyEl, btnGroup);
+    container.append(titleEl, glowEl, bodyEl, noteEl, btnGroup);
   });
 }
 

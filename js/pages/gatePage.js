@@ -10,6 +10,12 @@ import { getExpectedGateId, getState, setSelectedQuestion } from '../state.js';
 import { validateGateId, selectRandomQuestion } from '../gameLogic.js';
 import { navigateTo } from '../router.js';
 
+const SHADOW_IMAGES = {
+  1: 'assets/images/irrlicht-shadow-1.png',
+  2: 'assets/images/irrlicht-shadow-2.png',
+  3: 'assets/images/irrlicht-shadow-3.png'
+};
+
 export function render() {
   const state = getState();
   const stationIndex = state.currentStation;
@@ -18,7 +24,13 @@ export function render() {
 
   renderPage((container) => {
     const titleEl = createElement('h1', { className: 'title' }, `Gate ${stationIndex}`);
-    const instructionEl = createElement('p', { className: 'gate-instruction' }, `Enter the correct Gate ID to verify identity.`);
+    const instructionEl = createElement('p', { className: 'gate-instruction' }, 'Enter the correct Gate ID to connect to Irrlicht');
+    const irrlichtImg = createElement('img', {
+      className: 'gate-irrlicht-shadow',
+      src: SHADOW_IMAGES[stationIndex],
+      alt: `Irrlicht ${stationIndex}`
+    });
+    const irrlichtFrame = createElement('div', { className: 'gate-irrlicht-frame' }, irrlichtImg);
 
     // Input fields & errors
     const inputEl = createElement('input', {
@@ -58,6 +70,6 @@ export function render() {
 
     const submitBtn = createButton(gateTexts.submitButton, handleSubmit);
 
-    container.append(titleEl, instructionEl, inputContainer, submitBtn);
+    container.append(titleEl, instructionEl, irrlichtFrame, inputContainer, submitBtn);
   });
 }

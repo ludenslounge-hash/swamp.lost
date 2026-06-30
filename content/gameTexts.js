@@ -67,7 +67,7 @@ export const GAME_TEXTS = Object.freeze({
         "Nothing is fake enough to trigger alarms. Nothing is true enough to become ground.",
         "The comments are warm. The reactions are immediate. The voices agree with you a little too smoothly.",
         "Everything feels human from a distance.",
-        "Up close, every signal is too polished, too calibrated, too ready to be trusted.",
+        "Up close, every signal is too agreeable, too optimized, too emotionally calibrated.",
       ]),
     }),
     3: Object.freeze({

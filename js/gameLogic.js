@@ -26,14 +26,14 @@ export function getStationConfig(stationIndex) {
 
 /**
  * Validate the player's gate ID input against the expected ID.
- * Case-sensitive as per validation specs.
+ * Case-insensitive so kiosk players do not get blocked by capitalization.
  * @param {string} input 
  * @param {string} expected 
  * @returns {boolean}
  */
 export function validateGateId(input, expected) {
   if (!input || !expected) return false;
-  return input.trim() === expected;
+  return input.trim().toLowerCase() === expected.trim().toLowerCase();
 }
 
 /**
