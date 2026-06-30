@@ -178,7 +178,7 @@ export const GAME_TEXTS = Object.freeze({
       title: "You got lost in the swamp",
       body: "You entered the swamp like a pirate, looking for a route no one else could find. At first, suspicion kept you alive. Then it became the only law you followed.  The Irrlichter did not need to mislead you. You completed the trap yourself. Somewhere beyond the fog, a Dark Forest Community stayed hidden,  because you could no longer imagine that anything real would let itself be found.",
     }),
-    escape: Object.freeze({
+    drift: Object.freeze({
       title: "You made it out of the swamp",
       body: "You crossed the swamp without fully belonging to it. Some lights you followed. Some you refused. Some may have been traps. Some may have been protecting something human. You learned that the Irrlichter Protocol never gives clean proof. It only watches how you move when proof is gone. The swamp lets you continue, but not unchanged. You leave with the feeling that every signal could still be harvesting something from you",
     }),
