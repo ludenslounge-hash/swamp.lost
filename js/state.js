@@ -6,7 +6,7 @@
 
 import { calculateScoreChange, determineResult, getStationConfig } from './gameLogic.js';
 
-const STORAGE_KEY = 'swamp_lost_state';
+export const STORAGE_KEY = 'swamp_lost_state';
 
 const INITIAL_STATE = {
   currentStation: 1,          // 1–3
@@ -54,6 +54,11 @@ export function getState() {
  */
 export function resetState() {
   state = JSON.parse(JSON.stringify(INITIAL_STATE));
+  try {
+    sessionStorage.removeItem(STORAGE_KEY);
+  } catch (e) {
+    console.error('Failed to clear state from sessionStorage', e);
+  }
   saveState();
   return getState();
 }
