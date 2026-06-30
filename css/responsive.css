@@ -26,6 +26,11 @@
     font-size: 0.8rem;
   }
 
+  .reset-game-button {
+    padding: 0.55rem 0.7rem;
+    font-size: 0.65rem;
+  }
+
   .text-box {
     padding: var(--space-sm);
   }

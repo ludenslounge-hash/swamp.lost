@@ -5,10 +5,10 @@
  * Offers a detailed verification log download and restart functionality.
  */
 
-import { getState, resetState, getFinalResult } from '../state.js';
+import { getState, getFinalResult } from '../state.js';
 import { GAME_TEXTS } from '../../content/gameTexts.js';
 import { renderPage, createElement, createButton } from '../renderer.js';
-import { navigateTo } from '../router.js';
+import { resetGame } from '../gameReset.js';
 
 const PATH_SAVE_COUNTER_KEY = 'swampLostPathSaveNumber';
 
@@ -37,8 +37,7 @@ export function render() {
     };
 
     const handleRestart = () => {
-      resetState();
-      navigateTo('#/intro');
+      resetGame();
     };
 
     const downloadBtn = createButton(GAME_TEXTS.ui.download, handleDownload);
