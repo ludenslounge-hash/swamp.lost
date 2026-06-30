@@ -24,7 +24,7 @@ export function render() {
 
   renderPage((container) => {
     const titleEl = createElement('h1', { className: 'title' }, `Gate ${stationIndex}`);
-    const instructionEl = createElement('p', { className: 'gate-instruction' }, 'Enter the correct Gate ID to connect to Irrlicht');
+    const instructionEl = createElement('p', { className: 'gate-instruction' }, 'Enter the correct Gate ID to connect with the Irrlicht');
     const irrlichtImg = createElement('img', {
       className: 'gate-irrlicht-shadow',
       src: SHADOW_IMAGES[stationIndex],

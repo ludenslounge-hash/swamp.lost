@@ -66,7 +66,7 @@ export const GAME_TEXTS = Object.freeze({
         "A region saturated by synthetic engagement.",
         "Nothing is fake enough to trigger alarms.But everything feels slightly wrong.",
         "Everything feels human from a distance.",
-        "Up close, every signal is too agreeable, too optimized, too emotionally calibrated.",
+        "Up close, everything is too agreeable, too optimized, too emotionally calibrated.",
       ]),
     }),
     3: Object.freeze({
